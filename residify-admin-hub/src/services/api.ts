@@ -1,7 +1,7 @@
 import axios, { AxiosError } from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://6149-34-69-37-33.ngrok-free.app/',
+  baseURL: 'https://exact-anchovy-intimate.ngrok-free.app/',
   headers: {
     'Content-Type': 'application/json',
   }
