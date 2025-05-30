@@ -27,7 +27,8 @@ api.interceptors.request.use(config => {
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
-  
+    config.headers['ngrok-skip-browser-warning'] = 'true';
+
   // If sending FormData, let the browser set the Content-Type
   if (config.data instanceof FormData) {
     delete config.headers['Content-Type'];
